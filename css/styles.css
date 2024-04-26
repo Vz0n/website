@@ -1,0 +1,100 @@
+@keyframes appear{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes slide{
+    1%{opacity: 0; left: 0px}
+    50%{opacity: 0.5; left: 35px;}
+    100%{opacity: 1; left: 0px;}
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+
+.header{
+    animation: appear 1 none ease 2s;
+    display: grid;
+    row-gap: 10px;
+    margin: 13px;
+}
+
+#main{
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: fit-content;
+}
+
+#main > * {
+    margin: 25px;
+ }
+
+@media screen and (min-width: 400px){
+    .bio {
+        position: relative;
+        animation: slide 2s both ease 1;
+    }
+    .social-media{
+        position: relative;
+        animation: slide 2s both ease 1;
+    }
+}
+
+.bio{
+    font-family: 'Roboto Mono', sans-serif;
+    flex: 0 1 50%;
+    color: rgb(8, 92, 13);
+    align-self: center;
+}
+
+.bio p {
+    background-color: black;
+    padding: 16px;
+    margin: 0px;
+    text-align: left;
+    white-space: pre-line;
+    box-shadow: 3px 3px 27px rgba(36, 3, 73, 0.795);
+}
+
+* h3,h2,h1,span {
+    margin: 0px;
+}
+
+ul {
+   list-style-type: none;
+   padding-left: 0px;
+}
+
+ul li {
+   display: inline-block;
+}
+
+.social-media{
+    text-align: center;
+}
+
+.link {
+    color: hsl(256, 71%, 51%);
+    padding: 10px;
+    border-radius: 7px;
+    padding: 20px;
+    transition: opacity 0.5s;
+}
+
+.link:hover{
+    background-image: linear-gradient(90deg, rgba(51, 38, 109, 0.5), hsl(145, 67%, 17%))
+}
+
+.links:active{
+    opacity: 0.5;
+}
+
+.footer{
+    color: rgb(20, 86, 129);
+    position: fixed;
+    bottom: 1vh;
+}
