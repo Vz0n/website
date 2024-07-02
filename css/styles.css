@@ -23,6 +23,19 @@ body{
     margin: 13px;
 }
 
+.header a{
+    text-align: center;
+    color: green;
+    grid-column: 5;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: box-shadow 500ms;
+}
+
+.header a:hover{
+    box-shadow: 4px 4px 20px rgba(36, 3, 73, 0.795);
+}
+
 #main{
     display: flex;
     flex-flow: column wrap;
@@ -61,7 +74,7 @@ body{
 }
 
 * h3,h2,h1,span {
-    margin: 0px;
+    margin: 2px;
 }
 
 ul {

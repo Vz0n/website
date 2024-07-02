@@ -1,6 +1,6 @@
 // Functions
 async function getSocialLinks(){
-    let resp = await fetch("https://archive.vzondev.cf/api/v1/social");
+    let resp = await fetch("https://archive.vzondev.com/api/v1/social");
     return resp.json();
 }
 
@@ -28,7 +28,8 @@ function setSocialLinks(){
 }
 
 // Set social links dynamicly 
-setSocialLinks();
+// Wont call this because the API server is down
+// setSocialLinks();
 
 // Set the footer date
 let i = document.getElementById("credits");
