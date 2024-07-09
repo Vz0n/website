@@ -1,0 +1,7 @@
+#emoji-what{
+    display: inline-block;
+    background: url("/assets/img/what.webp") no-repeat;
+    background-size: cover;
+    padding: 10px;
+    margin: 3px 3px -4px;
+}

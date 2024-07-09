@@ -35,7 +35,7 @@ function setSocialLinks(){
 let i = document.getElementById("credits");
 let date = new Date();
 
-i.textContent = date.getFullYear() + " - Mailbox | This portal is WIP";
+i.textContent = date.getFullYear() + " - Vz0n | This portal is WIP";
 
 
 
