@@ -26,11 +26,6 @@ body{
         border-radius: 32px;
     }
 
-    .link {
-      text-align: center;
-      color: green;
-    }
-
 }
 
 #main{
@@ -81,14 +76,16 @@ ul li {
 
 .things {
     margin-bottom: 10px;
+    animation: 2s appear both ease;
 }
 
 .link {
-    color: hsl(256, 71%, 51%);
+    color: white;
     padding: 20px;
     border-radius: 7px;
+    border: 1px solid transparent;
     text-decoration: none;
-    transition: opacity 0.2s, background-color 0.2s;
+    transition: border 0.1s, background-color 0.2s;
 }
 
 .link:hover{
@@ -96,7 +93,7 @@ ul li {
 }
 
 .link:active{
-    opacity: 0.5;
+    border-color: rgb(0, 255, 242);
 }
 
 .footer{

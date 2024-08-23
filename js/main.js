@@ -1,4 +1,4 @@
-// Functions
+// Old Functions
 async function getSocialLinks(){
     let resp = await fetch("https://archive.vzondev.com/api/v1/social");
     return resp.json();
@@ -26,16 +26,6 @@ function setSocialLinks(){
     }).catch((err) => {console.error("Error loading the social links: " + err)});
 
 }
-
-// Set social links dynamicly 
-// Wont call this because the API server is down
-// setSocialLinks();
-
-// Set the footer date
-let i = document.getElementById("credits");
-let date = new Date();
-
-i.textContent = date.getFullYear() + " - Vz0n | This portal is WIP";
 
 
 
