@@ -1,15 +1,5 @@
 @import url("emoji.css");
-
-@keyframes appear{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-
-@keyframes slide{
-    1%{opacity: 0; left: 0px}
-    50%{opacity: 0.5; left: 35px;}
-    100%{opacity: 1; left: 0px;}
-}
+@import url("media.css");
 
 body{
     font-family: 'Rubik', sans-serif;
@@ -58,17 +48,6 @@ body{
     }
 }
 
-@media screen and (min-width: 400px){
-    .bio {
-        position: relative;
-        animation: slide 2s both ease 1;
-    }
-    .social-media{
-        position: relative;
-        animation: slide 2s both ease 1;
-    }
-}
-
 .bio{
     font-family: 'Roboto Mono', sans-serif;
     flex: 0 1 50%;
@@ -100,12 +79,16 @@ ul li {
     text-align: center;
 }
 
+.things {
+    margin-bottom: 10px;
+}
+
 .link {
     color: hsl(256, 71%, 51%);
-    padding: 10px;
+    padding: 20px;
     border-radius: 7px;
     text-decoration: none;
-    transition: opacity 0.5s, background-color 0.5s;
+    transition: opacity 0.2s, background-color 0.2s;
 }
 
 .link:hover{

@@ -1,0 +1,32 @@
+@keyframes appear{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes slide{
+    1%{opacity: 0; left: 0px}
+    50%{opacity: 0.5; left: 35px;}
+    100%{opacity: 1; left: 0px;}
+}
+
+@media screen and (min-width: 400px){
+    .bio {
+        position: relative;
+        animation: slide 2s both ease 1;
+    }
+    .social-media{
+        position: relative;
+        animation: slide 2s both ease 1;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .link {
+        align-self: baseline;
+    }
+
+    .flex-separator {
+        /* Yes, just hide it */
+        display: none;
+    }
+}
