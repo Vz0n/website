@@ -86,6 +86,8 @@ ul {
     border: 1px solid transparent;
     text-decoration: none;
     transition: border 0.1s, background-color 0.2s;
+    /* Just set this cursor for... uwu */
+    cursor: url("/assets/img/cursor.png"), auto;
 
     &:hover{
         background-color: rgba(36, 3, 73, 0.795);
