@@ -1,25 +1,15 @@
-@keyframes appear{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-
-@keyframes slide{
-    1%{opacity: 0; top: -35px}
-    50%{opacity: 0.5; top: -15px;}
-    100%{opacity: 1; top: 0px;}
-}
-
+/* Computers */
 @media screen and (min-width: 400px){
-    .bio {
+    .bio, .social-media {
         position: relative;
         animation: slide 2s both ease 1;
     }
-    .social-media{
-        position: relative;
-        animation: slide 2s both ease 1;
+    .text-nowrap {
+        white-space: nowrap;
     }
 }
 
+/* Mobile devices */
 @media screen and (max-width: 400px){
     .link {
         align-self: baseline;

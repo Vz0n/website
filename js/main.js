@@ -1,4 +1,4 @@
-// Old Functions
+// Functions for future use.
 async function getSocialLinks(){
     let resp = await fetch("https://archive.vzondev.com/api/v1/social");
     return resp.json();

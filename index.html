@@ -16,14 +16,17 @@
    <link rel="icon" href="/assets/favicon.ico">
   </head>
   <body>
-    <header class="header">
+    <header id="header">
         <img src="https://avatars.githubusercontent.com/u/65766278?v=4" width="32px" height="32px"/>
-        <div class="container">
+        <div class="text-nowrap">
           <h3>Welcome to my homepage!</h3>  
-          <i>"The more you learn, you realize that the world is huge."</i>
+          <i>"Seeing stupid people on stuff that require logic gets me amazed"</i>
         </div>
         <div class="flex-separator"></div>
-        <a class="link" href="/blog">My Blog (Spanish)</a>
+        <section id="links">
+          <a class="link" href="/blog">My Blog (Spanish)</a>
+          <a class="link" href="/assets/public.gpg">GPG key</a>
+        </section>
     </header>
     <main id="main">
         <section class="bio">
@@ -41,8 +44,8 @@
           <i>... well, for now this will be empty <div id="emoji-what"></div></i>
         </section>
     </main>
-    <footer class="footer">
-      <span id="credits"></span>
+    <footer id="footer">
+      <span class="credits"></span>
     </footer>
     <script src="/js/main.js"></script>
   </body>
