@@ -1,6 +1,6 @@
 // Functions for future use.
 async function getSocialLinks(){
-    let resp = await fetch("https://archive.vzondev.com/api/v1/social");
+    let resp = await fetch("https://api.vzondev.xyz/v1/social");
     return resp.json();
 }
 
