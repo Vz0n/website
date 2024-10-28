@@ -1,31 +1,9 @@
-// Functions for future use.
-async function getSocialLinks(){
-    let resp = await fetch("https://api.vzondev.xyz/v1/social");
-    return resp.json();
-}
+const progammingSince = new Date(2019, 2, 9, 14, 35).getTime();
+const now = new Date().getTime();
 
-function setSocialLinks(){
-    let socials_el = document.getElementById("social-links");
-    getSocialLinks().then((data) => {
-       const links = data.social;
-       for(link in links){
-          let el = document.createElement("li");
+let spanElement = document.getElementById("years");
+// As the timestamp is in milliseconds, the time inverse factor is 1000*60*60*24*365
+let years = (now - progammingSince)/31536000000
 
-          // Set attributes
-          el.setAttribute("data-url", links[link]);
-          el.className = "link";
-          el.textContent = link;
-
-          // Set click event
-          el.addEventListener("click", () => {
-            window.location = el.getAttribute("data-url");
-          });
-
-          socials_el.appendChild(el);
-       }
-    }).catch((err) => {console.error("Error loading the social links: " + err)});
-
-}
-
-
+spanElement.textContent = Math.floor(years)
 
