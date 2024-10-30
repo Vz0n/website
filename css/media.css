@@ -4,19 +4,4 @@
         position: relative;
         animation: slide 2s both ease 1;
     }
-    .text-nowrap {
-        white-space: nowrap;
-    }
-}
-
-/* Mobile devices */
-@media screen and (max-width: 400px){
-    .link {
-        align-self: baseline;
-    }
-
-    .flex-separator {
-        /* Yes, just hide it */
-        display: none;
-    }
 }

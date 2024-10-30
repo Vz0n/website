@@ -26,7 +26,7 @@ body{
 
 /* Yes, just a silly separator */
 .flex-separator{
-    padding-left: 40vw;
+    width: 5vw;
 }
 
 #header{
@@ -108,10 +108,12 @@ ul {
     transition: transform 0.1s, background-color 0.2s;
     /* Just set this cursor for... uwu */
     cursor: url("/assets/img/cursor.png"), auto;
+    margin-left: 20px;
 
     &:hover{
         background-color: var(--secondary-color);
     }
+    
 
     &:active {
         transform: scale(1.1);
