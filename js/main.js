@@ -16,7 +16,7 @@ function setLinksTarget(node){
 }
 
 let spanElement = document.getElementById("years");
-let links = document.getElementById("links");
+let links = document.getElementsByClassName("link-container")[0];
 spanElement.textContent = getYearsProgramming();
 setLinksTarget(links);
 

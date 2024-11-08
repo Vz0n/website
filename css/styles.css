@@ -1,5 +1,6 @@
 @import url("emoji.css");
 @import url("media.css");
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 
 @keyframes appear{
     from{opacity: 0;}
@@ -12,7 +13,6 @@
     100%{opacity: 1; top: 0px;}
 }
 
-
 body{
     font-family: 'Rubik', sans-serif;
     background-color: black;
@@ -22,11 +22,6 @@ body{
 
     --primary-color: rgb(8, 92, 13);
     --secondary-color: rgba(36, 3, 73, 0.795);
-}
-
-/* Yes, just a silly separator */
-.flex-separator{
-    width: 5vw;
 }
 
 #header{
@@ -40,7 +35,6 @@ body{
     & img{
         border-radius: 32px;
     }
-
 }
 
 #main{
@@ -61,14 +55,15 @@ body{
 .bio{
     font-family: 'Roboto Mono', sans-serif;
     flex: 0 1 50%;
+    padding: 15px;
     color: var(--primary-color);
+    box-shadow: 3px 3px 27px var(--secondary-color);
 
     & p {
-        padding: 16px;
+        padding-top: 16px;
         margin: 0px;
         text-align: left;
         white-space: pre-line;
-        box-shadow: 3px 3px 27px var(--secondary-color)
     }
 }
 
@@ -94,34 +89,39 @@ ul {
     animation: 2s appear both ease;
 }
 
-#links{
-    border-left: 3px var(--primary-color) solid;
+#things{
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
+    margin: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-container {
+    margin-top: 13px;
+    max-width: fit-content;
 }
 
 .link {
     color: white;
-    padding: 6px;
-    border: 1px solid transparent;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 4px;
     text-decoration: none;
     transition: transform 0.1s, background-color 0.2s;
-    /* Just set this cursor for... uwu */
+    /* Just set this cursor because... uwu */
     cursor: url("/assets/img/cursor.png"), auto;
-    margin-left: 20px;
+    margin-right: 0.5vw;
 
     &:hover{
         background-color: var(--secondary-color);
     }
     
-
     &:active {
         transform: scale(1.1);
     }
 }
 
-.footer{
-    color: aqua;
-    position: fixed;
-    bottom: 1vh;
+#years{
+    margin: 0px;
 }
