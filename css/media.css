@@ -1,6 +1,6 @@
 /* Computers */
 @media screen and (min-width: 400px){
-    .bio, .social-media {
+    #bio, .social-media {
         position: relative;
         animation: slide 2s both ease 1;
     }

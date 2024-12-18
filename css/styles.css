@@ -3,24 +3,30 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 
 @keyframes appear{
-    from{opacity: 0;}
-    to{opacity: 1;}
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+@keyframes shadow{
+    from { box-shadow: 3px 3px 27px var(--secondary-color) }
+    to { box-shadow: 1px 1px 1px var(--secondary-color) }
 }
 
 @keyframes slide{
-    1%{opacity: 0; top: -35px}
-    50%{opacity: 0.5; top: -15px;}
-    100%{opacity: 1; top: 0px;}
+    1% { opacity: 0; top: -35px }
+    50% { opacity: 0.5; top: -15px }
+    100% { opacity: 1; top: 0px }
 }
 
 body{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: black;
     color: white;
     box-sizing: border-box;
     margin: 0px;
 
     --primary-color: rgb(8, 92, 13);
+    --header-color: aqua;
     --secondary-color: rgba(36, 3, 73, 0.795);
 }
 
@@ -30,45 +36,62 @@ body{
     flex-direction: row;
     margin: 6px;
     column-gap: 10px;
-    color: aqua;
+    color: var(--header-color);
 
     & img{
+        padding-top: 4px;
         border-radius: 32px;
     }
 }
 
-#main{
+#content{
     display: flex;
     flex-flow: column wrap;
-    flex-basis: fit-content;
     align-content: center;
-
-    & .things {
-        text-align: center;
-    }
-
-    & .bio {
-        margin: 30px;
-    }
 }
 
-.bio{
+#bio {
+    margin: 30px;
     font-family: 'Roboto Mono', sans-serif;
     flex: 0 1 50%;
     padding: 15px;
     color: var(--primary-color);
-    box-shadow: 3px 3px 27px var(--secondary-color);
+    animation: shadow 5s infinite alternate;
 
     & p {
-        padding-top: 16px;
-        margin: 0px;
-        text-align: left;
-        white-space: pre-line;
+      padding-top: 16px;
+      margin: 0px;
+      text-align: left;
+      white-space: pre-line;
     }
 }
 
-* h3,h2,h1,span {
-    margin: 2px;
+#links{
+    text-align: center;
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#things{
+    & h2 {
+        text-align: center;
+        margin: 30px 1px;
+        color: var(--header-color);
+    }
+    & p {
+        margin-top: 5px;
+    }
+    & h4 {
+        font-weight: bolder;
+    }
+}
+
+* h4,h3,h2,h1,span {
+    margin: 0px;
 }
 
 ul {
@@ -87,20 +110,6 @@ ul {
 .things {
     margin-bottom: 10px;
     animation: 2s appear both ease;
-}
-
-#things{
-    text-align: center;
-    display: flex;
-    margin: 5px;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-}
-
-.link-container {
-    margin-top: 13px;
-    max-width: fit-content;
 }
 
 .link {
