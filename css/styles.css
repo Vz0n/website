@@ -20,7 +20,8 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
+    background: url("/assets/background.gif") fixed;
+    background-blend-mode: darken;
     color: white;
     box-sizing: border-box;
     margin: 0px;
@@ -56,6 +57,7 @@ body{
     flex: 0 1 50%;
     padding: 15px;
     color: var(--primary-color);
+    background-color: black;
     animation: shadow 5s infinite alternate;
 
     & p {
@@ -117,6 +119,8 @@ ul {
     color: white;
     padding: 10px;
     display: inline-block;
+    background-color: black;
+    animation: shadow 5s infinite alternate;
     border-radius: 4px;
     text-decoration: none;
     transition: transform 0.1s, background-color 0.2s;
