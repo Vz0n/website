@@ -20,8 +20,9 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background: url("/assets/background.gif") fixed;
+    background: url("/assets/background.gif") fixed no-repeat;
     background-blend-mode: darken;
+    background-size: cover;
     color: white;
     box-sizing: border-box;
     margin: 0px;
