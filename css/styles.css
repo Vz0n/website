@@ -12,15 +12,9 @@
     to { box-shadow: 1px 1px 1px var(--secondary-color) }
 }
 
-@keyframes slide{
-    1% { opacity: 0; top: -35px }
-    50% { opacity: 0.5; top: -15px }
-    100% { opacity: 1; top: 0px }
-}
-
 body{
     font-family: 'Open Sans', sans-serif;
-    background: url("/assets/background.gif") fixed no-repeat;
+    background: url("https://vzondev.xyz/assets/background.gif") fixed no-repeat;
     background-blend-mode: darken;
     background-size: cover;
     color: white;

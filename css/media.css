@@ -1,7 +1,7 @@
-/* Computers */
-@media screen and (min-width: 400px){
-    #bio, .social-media {
-        position: relative;
-        animation: slide 2s both ease 1;
+/* Phones */
+@media screen and (max-width: 600px){
+    .link {
+        margin-bottom: 10px;
     }
 }
+
