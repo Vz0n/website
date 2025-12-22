@@ -132,6 +132,12 @@ ul {
     }
 }
 
+.background-photo {
+    width: 50%;
+    border-radius: 8px;
+    border: 1px solid rgba(36, 3, 73, 0.795);
+}
+
 #years{
     margin: 0px;
 }
