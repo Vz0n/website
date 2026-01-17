@@ -8,15 +8,6 @@ function getYearsProgramming(){
 
 }
 
-// Sets the 'target' attribute of anchor elements in a tree to "blank".
-function setLinksTarget(node){
-    node.childNodes.forEach((node) => {
-        node.target = "blank"
-    });
-}
-
 let spanElement = document.getElementById("years");
-let links = document.getElementsByClassName("link-container")[0];
 spanElement.textContent = getYearsProgramming();
-setLinksTarget(links);
 
