@@ -76,9 +76,8 @@ body{
 #things{
     padding-left: 6px;
     & h2 {
-        text-align: center;
         margin: 30px 1px;
-        color: var(--header-color);
+        color: var(--secondary-color);
     }
     & p {
         margin-top: 5px;
@@ -103,11 +102,6 @@ ul {
 
 .social-media{
     text-align: center;
-}
-
-.things {
-    margin-bottom: 10px;
-    animation: 2s appear both ease;
 }
 
 .link {
