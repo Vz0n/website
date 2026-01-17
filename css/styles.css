@@ -12,6 +12,11 @@
     to { box-shadow: 1px 1px 1px var(--secondary-color) }
 }
 
+* {
+    /* Just set this cursor because... uwu */
+    cursor: url("/assets/img/cursor.png"), auto;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     background: url("/assets/background.gif") fixed no-repeat;
@@ -23,7 +28,7 @@ body{
 
     --primary-color: rgb(8, 92, 13);
     --header-color: aqua;
-    --secondary-color: rgba(36, 3, 73, 0.795);
+    --secondary-color: rgba(94, 5, 196, 0.795);
 }
 
 #header{
@@ -68,22 +73,24 @@ body{
     display: flex;
     margin: 5px;
     flex-direction: column;
-    gap: 8px;
+    gap: 20px;
     align-items: center;
     padding-bottom: 20px;
+
+    & h3 {
+        color: var(--header-color);
+    }
 }
 
 #things{
     padding-left: 6px;
+
     & h2 {
         margin: 30px 1px;
-        color: var(--secondary-color);
+        color: var(--header-color);
     }
     & p {
         margin-top: 5px;
-    }
-    & h4 {
-        font-weight: bolder;
     }
 }
 
@@ -105,7 +112,7 @@ ul {
 }
 
 .link {
-    color: white;
+    color: var(--secondary-color);
     padding: 10px;
     display: inline-block;
     background-color: black;
@@ -113,15 +120,13 @@ ul {
     border-radius: 4px;
     text-decoration: none;
     transition: transform 0.1s, background-color 0.2s;
-    /* Just set this cursor because... uwu */
-    cursor: url("/assets/img/cursor.png"), auto;
     margin-right: 0.5vw;
 
-    &:hover{
+    &:active {
         background-color: var(--secondary-color);
     }
     
-    &:active {
+    &:hover {
         transform: scale(1.1);
     }
 }
